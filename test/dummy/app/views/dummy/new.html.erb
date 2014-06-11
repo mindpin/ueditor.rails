@@ -1,0 +1,22 @@
+<h1>Builtin Form Helper</h1>
+<%= form_for @dummy_model, :url => "/dummy" do |f| %>
+  <div><%= label_tag do %>
+    <h3>f.uetext_area</h3>
+    <%= f.uetext_area :desc %>
+  <% end %></div>
+
+  <div><%= label_tag do %>
+    <h3>uetext_area_tag</h3>
+    <%= uetext_area_tag :dummy, @dummy %>
+  <% end %></div>
+
+  <%= f.submit :save %>
+<% end %>
+
+<h1>Simple Form</h1>
+<%= simple_form_for @dummy_model, :url => "/dummy" do |f| %>
+  <h3>f.input :desc, :as => :ueditor</h3>
+  <%= f.input :desc, :as => :ueditor %>
+
+  <%= f.submit :save %>
+<% end %>
