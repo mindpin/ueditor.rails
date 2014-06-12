@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    ueditor_on_rails (0.0.1)
-      rails (~> 4.1.1)
+    ueditor.rails (0.0.1)
+      rails (~> 4.1)
 
 GEM
   remote: https://rubygems.org/
@@ -99,4 +99,4 @@ PLATFORMS
 DEPENDENCIES
   pry
   simple_form
-  ueditor_on_rails!
+  ueditor.rails!
