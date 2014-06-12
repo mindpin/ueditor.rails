@@ -10,4 +10,5 @@ test/dummy/.sass-cache
 ._.DS_*
 .DS_*
 *.swp
+*.gem
 
