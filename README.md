@@ -8,7 +8,11 @@ Usages
 In your Gemfile's default group:
 
 ```ruby
-gem "ueditor.rails", ~> "0.0.1"
+gem "ueditor.rails", "~> 0.0.2"
+
+# or
+
+gem "ueditor.rails", :github => "mindpin/ueditor.rails", :tag => "0.0.2"
 ```
 
 In `app/assets/javascripts/application.js`:
