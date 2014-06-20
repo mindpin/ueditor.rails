@@ -11,9 +11,8 @@
 
         //工具栏上的所有的功能按钮和下拉框，可以在new编辑器的实例时选择自己需要的从新定义
         , toolbars: [[
-            'bold', 'italic', 'underline',
-            'strikethrough', 'blockquote','insertorderedlist',
-            'insertunorderedlist', 'link', 'unlink', '|', "source"
+            'bold', 'underline', 'strikethrough', 'blockquote','insertorderedlist',
+            'insertunorderedlist', 'link', "unlink", "source"
         ]]
         //当鼠标放在工具栏上时显示的tooltip提示,留空支持自动多语言配置，否则以配置值为准
         //,labelMap:{
@@ -66,7 +65,7 @@
         //,autoClearEmptyNode : true //getContent时，是否删除空的inlineElement节点（包括嵌套的情况）
 
         //启用自动保存
-        //,enableAutoSave: true
+        ,enableAutoSave: false
         //自动保存间隔时间， 单位ms
         //,saveInterval: 500
 
@@ -78,7 +77,7 @@
         //,emotionLocalization:false //是否开启表情本地化，默认关闭。若要开启请确保emotion文件夹下包含官网提供的images表情文件夹
 
         //粘贴只保留标签，去除标签所有属性
-        //,retainOnlyLabelPasted: false
+        ,retainOnlyLabelPasted: true
 
         //,pasteplain:false  //是否默认为纯文本粘贴。false为不使用纯文本粘贴，true为使用纯文本粘贴
         //纯文本粘贴模式下的过滤规则
@@ -216,10 +215,10 @@
 
         //elementPathEnabled
         //是否启用元素路径，默认是显示
-        //,elementPathEnabled : true
+        ,elementPathEnabled : false
 
         //wordCount
-        //,wordCount:true          //是否开启字数统计
+        ,wordCount: false          //是否开启字数统计
         //,maximumWords:10000       //允许的最大字符数
         //字数统计提示，{#count}代表当前字数，{#leave}代表还可以输入多少字符数,留空支持多语言自动切换，否则按此配置显示
         //,wordCountMsg:''   //当前已输入 {#count} 个字符，您还可以输入{#leave} 个字符

@@ -3,10 +3,15 @@ module UEditor
     module JsHelper
       def uejs(id)
         javascript_tag <<-END.gsub(/^ {8}/, "")
-          document.addEventListener("DOMContentLoaded", function(event) {
-            UE.getEditor(\"#{id}\");
-          });
+          function loadUEditor() {UE.getEditor('#{id}');}
+
+          if (window.UE) {
+            loadUEditor()
+          } else {
+            document.addEventListener('DOMContentLoaded', loadUEditor)
+          }
         END
+
       end
     end
   end
