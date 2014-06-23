@@ -1921,6 +1921,8 @@ div.edui-box {
     background: #fafafa;
     box-shadow: none;
     border-radius: 0;
+    border-top:solid 1px #E5E5E5;
+    border-bottom:solid 1px #E5E5E5;
 }
 
 .edui-mindpin .edui-editor-toolbarbox {
@@ -1931,4 +1933,13 @@ div.edui-box {
 .edui-mindpin .edui-editor {
     border-radius: 0;
     border:0 none;
+    background: transparent;
+}
+
+.edui-mindpin .edui-editor-bottomContainer {
+    display: none;
+}
+
+.edui-mindpin .edui-editor-iframeholder {
+    margin-top: 15px;
 }

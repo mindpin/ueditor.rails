@@ -17,7 +17,6 @@ do ->
 
     pasteplain: true
     filterTxtRules: {
-      # '-' : 'script style object iframe embed input select',
       'img': {$: {
         'src': true
       }}
