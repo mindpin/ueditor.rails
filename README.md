@@ -53,4 +53,4 @@ SimpleForm:
 - 实现配置中的 filterTxtRules 配置项来规定了文本粘贴时的标签过滤算法，相比于 retainOnlyLabelPasted: true 这样做的好处是能够在过滤时规定保留哪些指定标签和哪些指定属性（如文字下划线样式。）具体参见：https://github.com/mindpin/tech-exp/issues/39
 
 # 备注
-- lib 下的 simple_form 钩子会在 html 正文内添加 <script> 侵入性较强。集成时暂时不会使用。目前集成时采用手动调用 ueditor API 的方式来加载编辑框。
+- lib 下的 simple_form 钩子会在 html 正文内添加 `<script>` 侵入性较强。集成时暂时不会使用。目前集成时采用手动调用 ueditor API 的方式来加载编辑框。
