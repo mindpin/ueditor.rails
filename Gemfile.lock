@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ueditor.rails (0.0.3)
+    ueditor.rails (0.0.4)
       rails (~> 4.1)
 
 GEM
@@ -36,7 +36,15 @@ GEM
     arel (5.0.1.20140414130214)
     builder (3.2.2)
     coderay (1.1.0)
+    coffee-rails (4.0.1)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0, < 5.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.7.0)
     erubis (2.7.0)
+    execjs (2.2.0)
     hike (1.2.3)
     i18n (0.6.9)
     json (1.8.1)
@@ -97,6 +105,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-rails
   pry
   simple_form
   ueditor.rails!
