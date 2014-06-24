@@ -19,5 +19,9 @@ module UEditor
         SimpleForm.send :include, Hooks::SimpleForm
       end
     end
+
+    initializer "ueditor.assets" do |app|
+      app.middleware.insert_before ::ActionDispatch::Static, ::ActionDispatch::Static, "#{root}/public"
+    end
   end
 end
