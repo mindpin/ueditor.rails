@@ -64,6 +64,7 @@ do ->
       'ol':   {$:{}}
       'ul':   {$:{}}
       'li':   {$:{}}
+      'blockquote': {$:{}}
       
       'caption': transP
       'th': transP
