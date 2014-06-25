@@ -15,6 +15,12 @@ gem "ueditor.rails", "~> 0.0.4"
 gem "ueditor.rails", :github => "mindpin/ueditor.rails", :tag => "0.0.4"
 ```
 
+After bundling, run the following:
+
+```bash
+$ rails g ueditor:install
+```
+
 In `app/assets/javascripts/application.js`:
 
 ```ruby
