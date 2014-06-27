@@ -42,6 +42,10 @@ do ->
     insertunorderedlist: { 'disc': '' }
     insertorderedlist: { 'decimal': '' }
 
+    # 对话框路径
+    iframeUrlMap:
+      link: '/ueditor/dialogs/link/link.html'
+
     # 粘贴时的内容过滤
     pasteplain: true
     filterTxtRules: {
