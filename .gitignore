@@ -5,6 +5,7 @@ pkg/
 *.sqlite3-journal
 test/dummy/tmp/
 test/dummy/.sass-cache
+test/dummy/public/ueditor
 *~
 \#*
 ._.DS_*
